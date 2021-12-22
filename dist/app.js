@@ -13,7 +13,7 @@ class Person {
         console.log(pharas + ' ' + this.name);
     }
 }
-let user1 = new Person('Max');
+let user1 = new Person('Max !!!');
 console.log(user1.greet('Hi'));
 // user1 = {
 //     name: "max",

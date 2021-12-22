@@ -33,7 +33,7 @@ class Person implements Greetable{
     }
 }
 
-let user1 =  new Person('Max');
+let user1 =  new Person('Max !!!');
 console.log(user1.greet('Hi'));
 
 // user1 = {
