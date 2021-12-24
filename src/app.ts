@@ -4,8 +4,7 @@ interface Person {
     add: boolean
   }
   
-  type PersonKeys = keyof Person; // "age" | "name"
-
+  type PersonKeys = keyof Person;
 
   interface User{
       address: PersonKeys
