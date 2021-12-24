@@ -10,7 +10,7 @@ interface Person {
       address: PersonKeys
   }
 
-class CheckKeyOf implements User{
+class keyOf implements User{
     address: "add"
 }
 
