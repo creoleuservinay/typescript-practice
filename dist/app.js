@@ -16,13 +16,30 @@ function updateShipType(constructor) {
         }
     };
 }
-let productCheckOut = class productCheckOut {
-    constructor(st) {
+function updateShippingPrice() {
+    return function (target, propertyKey) {
+        console.log(target);
+        let value;
+        Object.defineProperty(target, propertyKey, {
+            get: () => {
+                return value;
+            },
+            set: (v) => {
+                value = v;
+                console.log('Setter');
+            }
+        });
+    };
+}
+//@updateShipType
+class productCheckOut {
+    constructor(st, p) {
         this.shiptype = st;
+        this.shippingPrice = p;
     }
-};
-productCheckOut = __decorate([
-    updateShipType
-], productCheckOut);
-const newOrder = new productCheckOut('International');
-console.log(newOrder); // Prints "report"
+}
+__decorate([
+    updateShippingPrice()
+], productCheckOut.prototype, "shippingPrice", void 0);
+const newOrder = new productCheckOut('International', 0);
+console.log(newOrder.shippingPrice); // Prints "report"

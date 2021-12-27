@@ -8,14 +8,39 @@ function updateShipType<T extends { new (...args: any[]): {} }>(constructor: T) 
     };
 }
 
-@updateShipType
-class productCheckOut{
-     shiptype: string; //Local, International
+function updateShippingPrice()
+{
+    return function(target: object, propertyKey: string) {
+            console.log(target);
+            let value: number;
+            Object.defineProperty(target, propertyKey, { 
 
-    constructor(st: string){
+            get: () => {
+                        return value;
+                    },
+
+            set: (v: number) => {
+
+                    value = v;
+                    console.log('Setter');
+            }
+        });
+    }
+}
+  
+
+//@updateShipType
+class productCheckOut{
+    @updateShippingPrice()
+    shippingPrice: number;
+
+    shiptype: string; //Local, International
+
+    constructor(st: string, p: number){
         this.shiptype = st;
+        this.shippingPrice = p;
     }
 }
 
-const newOrder = new productCheckOut('International');
-console.log(newOrder); // Prints "report"
+const newOrder = new productCheckOut('International', 0);
+console.log(newOrder.shippingPrice); // Prints "report"
