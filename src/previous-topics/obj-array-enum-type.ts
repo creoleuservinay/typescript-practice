@@ -1,11 +1,12 @@
 
 //Enum type
 enum Role {admin, author, user}
+
 const person = {
     name: "Vinay",
     age: 28,
     hobbies:["cricket", "Reading books"],
-    role:Role.admin
+    role:Role.admin,
 }
 if(person.role == Role.admin){
     console.log(person);

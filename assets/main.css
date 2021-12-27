@@ -1,0 +1,9 @@
+.add_emp_form{
+    padding: 50px;
+    border: 1px solid gray; 
+}
+
+#employees-list{
+    padding: 20px;
+    border: 1px solid gray;
+}
