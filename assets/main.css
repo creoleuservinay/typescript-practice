@@ -12,3 +12,8 @@ body{
     margin-top: 50px;
     font-family: cursive;
 }
+
+.add_emp_form{
+    padding: 50px;
+    border: 1px solid gray;
+}

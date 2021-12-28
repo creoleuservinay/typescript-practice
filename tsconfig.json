@@ -67,6 +67,6 @@
   // src/decorators.ts.tse.ts.ts"
   // ],
   "files": [
-    "src/app.ts", "src/index.ts"
+    "src/app.ts", "src/index.ts", "src/employee-manager.ts"
   ]
 }
