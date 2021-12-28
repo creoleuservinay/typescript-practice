@@ -1,9 +1,14 @@
-.add_emp_form{
-    padding: 50px;
-    border: 1px solid gray; 
+body{
+    background-color: thistle;
 }
 
-#employees-list{
-    padding: 20px;
-    border: 1px solid gray;
+.bubble{
+    background-color: red;
+}
+
+.p-tag-node{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: cursive;
 }
