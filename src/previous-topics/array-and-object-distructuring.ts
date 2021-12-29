@@ -4,7 +4,6 @@ const hobbiesOfUser = ["Cricket", "Reading", "Football", "Other"];
 const [hobby1, hoby2, ...others] =  hobbiesOfUser;
 console.log('Disctuctured Array', hobby1, hoby2, others);
 
-
 //Object Distructring.
 const players = {
     firstName: "vinay",

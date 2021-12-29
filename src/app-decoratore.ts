@@ -45,6 +45,3 @@ class productCheckOut{
 const newOrder = new productCheckOut('International', 0);
 console.log(newOrder.shippingPrice); // Prints "report"
 
-
-let sym1 = Symbol();
-let sym2 = Symbol("key"); // optional string key

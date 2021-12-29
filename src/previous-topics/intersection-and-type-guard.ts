@@ -28,8 +28,8 @@ const e1: UnknownEmployee = {
     previleges: ["All"],
     date: new Date,
 }
-//printEmployeeInformation({name: "vinay", date: new Date});
-////console.log(e1);
+printEmployeeInformation({name: "Admin", date: new Date);
+console.log(e1);
 
 //Intersection of Type
 

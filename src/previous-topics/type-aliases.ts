@@ -1,5 +1,7 @@
 type ConversionDescriptor = 'as-text' | 'as-number';
+
 type Combinable = number | string;
+
 function combine(
     n1: Combinable,
     n2: Combinable,

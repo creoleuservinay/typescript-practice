@@ -40,9 +40,9 @@ class DataStorage<T extends string | number | boolean>{
 }
 
 const textStorage =  new DataStorage<string>();
-textStorage.addItem('Max');
-textStorage.addItem('Manu!');
-textStorage.removeItem("max!");
+textStorage.addItem('Vinay');
+textStorage.addItem('Vk!');
+textStorage.removeItem("Vinay");
 
 //console.log(textStorage.getItems());
 
